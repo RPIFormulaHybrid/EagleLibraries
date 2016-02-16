@@ -1584,6 +1584,9 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-5.08" y="-10.16" size="1.778" layer="95">&lt;NAME</text>
 </symbol>
 <symbol name="LTC6802-1">
+<description>&lt;b&gt;LTC6802-1 Li-ion stack monitor&lt;/b&gt;
+&lt;br&gt; Untested 2/16/16
+&lt;br&gt;KRP</description>
 <wire x1="0" y1="0" x2="0" y2="58.42" width="0.254" layer="94"/>
 <wire x1="0" y1="58.42" x2="30.48" y2="58.42" width="0.254" layer="94"/>
 <wire x1="30.48" y1="58.42" x2="30.48" y2="0" width="0.254" layer="94"/>

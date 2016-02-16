@@ -2453,6 +2453,9 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 </devices>
 </deviceset>
 <deviceset name="LTC6802-1" prefix="U" uservalue="yes">
+<description>&lt;b&gt;LTC6802-1 Li-ion stack monitor&lt;/b&gt;
+&lt;br&gt; Device untested 2/16/16
+&lt;br&gt;KRP</description>
 <gates>
 <gate name="G$1" symbol="LTC6802-1" x="-15.24" y="-30.48"/>
 </gates>
