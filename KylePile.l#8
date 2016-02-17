@@ -1584,6 +1584,9 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-5.08" y="-10.16" size="1.778" layer="95">&lt;NAME</text>
 </symbol>
 <symbol name="LTC6802-1">
+<description>&lt;b&gt;LTC6802-1 Li-ion stack monitor&lt;/b&gt;
+&lt;br&gt; Untested 2/16/16
+&lt;br&gt;KRP</description>
 <wire x1="0" y1="0" x2="0" y2="58.42" width="0.254" layer="94"/>
 <wire x1="0" y1="58.42" x2="30.48" y2="58.42" width="0.254" layer="94"/>
 <wire x1="30.48" y1="58.42" x2="30.48" y2="0" width="0.254" layer="94"/>
@@ -1632,6 +1635,8 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <pin name="SDI" x="33.02" y="50.8" length="short" rot="R180"/>
 <pin name="SDO" x="33.02" y="53.34" length="short" rot="R180"/>
 <pin name="CSBI" x="33.02" y="55.88" length="short" rot="R180"/>
+<text x="10.16" y="60.96" size="2.54" layer="95">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="2.54" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
