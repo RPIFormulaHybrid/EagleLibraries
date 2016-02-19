@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -956,6 +956,8 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="2" y="3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4" y="2" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="ADS7952">
+</package>
 </packages>
 <symbols>
 <symbol name="TSSOP-16">
@@ -1637,6 +1639,51 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <pin name="CSBI" x="33.02" y="55.88" length="short" rot="R180"/>
 <text x="10.16" y="60.96" size="2.54" layer="95">&gt;NAME</text>
 <text x="7.62" y="-5.08" size="2.54" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADS7952">
+<description>ADC 12-CH 12-bit: http://www.ti.com/lit/ds/symlink/ads7950.pdf</description>
+<pin name="GPIO2" x="-17.78" y="12.7" length="middle"/>
+<pin name="GPIO3" x="-17.78" y="10.16" length="middle"/>
+<pin name="REFM" x="-17.78" y="7.62" length="middle"/>
+<pin name="REFP" x="-17.78" y="5.08" length="middle"/>
+<pin name="+VA" x="-17.78" y="2.54" length="middle"/>
+<pin name="AGND" x="-17.78" y="0" length="middle"/>
+<pin name="MXO" x="-17.78" y="-2.54" length="middle"/>
+<pin name="AINP" x="-17.78" y="-5.08" length="middle"/>
+<pin name="AINM" x="-17.78" y="-7.62" length="middle"/>
+<pin name="AGND1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="NC" x="-17.78" y="-12.7" length="middle"/>
+<pin name="NC1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="NC2" x="-17.78" y="-17.78" length="middle"/>
+<pin name="NC3" x="-17.78" y="-20.32" length="middle"/>
+<pin name="CH11" x="-17.78" y="-22.86" length="middle"/>
+<pin name="CH10" x="-17.78" y="-25.4" length="middle"/>
+<pin name="CH9" x="-17.78" y="-27.94" length="middle"/>
+<pin name="CH8" x="-17.78" y="-30.48" length="middle"/>
+<pin name="AGND2" x="-17.78" y="-33.02" length="middle"/>
+<pin name="AGND3" x="17.78" y="-33.02" length="middle" rot="R180"/>
+<pin name="CH7" x="17.78" y="-30.48" length="middle" rot="R180"/>
+<pin name="CH6" x="17.78" y="-27.94" length="middle" rot="R180"/>
+<pin name="CH5" x="17.78" y="-25.4" length="middle" rot="R180"/>
+<pin name="CH4" x="17.78" y="-22.86" length="middle" rot="R180"/>
+<pin name="CH3" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="CH2" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="CH1" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="CH0" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="+VA1" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="AGND4" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="!CS" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCLK" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDI" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SDO" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="BDGND" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="+VBD" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO0" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="GPIO1" x="17.78" y="12.7" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-38.1" x2="12.7" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-38.1" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2507,6 +2554,17 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <connect gate="G$1" pin="VTEMP2" pad="32"/>
 <connect gate="G$1" pin="WDTB" pad="37"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS7952">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
