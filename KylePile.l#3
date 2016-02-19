@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.000000123031" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000000123031" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1000,6 +1000,7 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <wire x1="4.8" y1="-5.5" x2="4.8" y2="5.5" width="0.127" layer="21"/>
 <wire x1="4.8" y1="5.5" x2="1" y2="5.5" width="0.127" layer="21"/>
 <circle x="1.856903125" y="4.5" radius="0.5" width="0.127" layer="21"/>
+<smd name="AGND4" x="2.901140625" y="-0.017403125" dx="3.048" dy="10.16" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -2605,9 +2606,50 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 </deviceset>
 <deviceset name="ADS7952">
 <gates>
+<gate name="G$1" symbol="ADS7952" x="0" y="10.16"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="38-TSSOP">
+<connects>
+<connect gate="G$1" pin="!CS" pad="31"/>
+<connect gate="G$1" pin="+VA" pad="5"/>
+<connect gate="G$1" pin="+VA1" pad="29"/>
+<connect gate="G$1" pin="+VBD" pad="36"/>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="AGND1" pad="10"/>
+<connect gate="G$1" pin="AGND2" pad="19"/>
+<connect gate="G$1" pin="AGND3" pad="20"/>
+<connect gate="G$1" pin="AGND4" pad="30"/>
+<connect gate="G$1" pin="AINM" pad="9"/>
+<connect gate="G$1" pin="AINP" pad="8"/>
+<connect gate="G$1" pin="BDGND" pad="34"/>
+<connect gate="G$1" pin="CH0" pad="28"/>
+<connect gate="G$1" pin="CH1" pad="27"/>
+<connect gate="G$1" pin="CH10" pad="16"/>
+<connect gate="G$1" pin="CH11" pad="15"/>
+<connect gate="G$1" pin="CH2" pad="26"/>
+<connect gate="G$1" pin="CH3" pad="25"/>
+<connect gate="G$1" pin="CH4" pad="24"/>
+<connect gate="G$1" pin="CH5" pad="23"/>
+<connect gate="G$1" pin="CH6" pad="22"/>
+<connect gate="G$1" pin="CH7" pad="21"/>
+<connect gate="G$1" pin="CH8" pad="18"/>
+<connect gate="G$1" pin="CH9" pad="17"/>
+<connect gate="G$1" pin="GPIO0" pad="37"/>
+<connect gate="G$1" pin="GPIO1" pad="38"/>
+<connect gate="G$1" pin="GPIO2" pad="1"/>
+<connect gate="G$1" pin="GPIO3" pad="2"/>
+<connect gate="G$1" pin="MXO" pad="7"/>
+<connect gate="G$1" pin="NC" pad="11"/>
+<connect gate="G$1" pin="NC1" pad="12"/>
+<connect gate="G$1" pin="NC2" pad="13"/>
+<connect gate="G$1" pin="NC3" pad="14"/>
+<connect gate="G$1" pin="REFM" pad="3"/>
+<connect gate="G$1" pin="REFP" pad="4"/>
+<connect gate="G$1" pin="SCLK" pad="32"/>
+<connect gate="G$1" pin="SDI" pad="33"/>
+<connect gate="G$1" pin="SDO" pad="35"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

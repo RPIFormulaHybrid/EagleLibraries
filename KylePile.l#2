@@ -1000,6 +1000,7 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <wire x1="4.8" y1="-5.5" x2="4.8" y2="5.5" width="0.127" layer="21"/>
 <wire x1="4.8" y1="5.5" x2="1" y2="5.5" width="0.127" layer="21"/>
 <circle x="1.856903125" y="4.5" radius="0.5" width="0.127" layer="21"/>
+<smd name="AGND4" x="2.901140625" y="-0.017403125" dx="3.048" dy="10.16" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -2618,7 +2619,7 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <connect gate="G$1" pin="AGND1" pad="10"/>
 <connect gate="G$1" pin="AGND2" pad="19"/>
 <connect gate="G$1" pin="AGND3" pad="20"/>
-<connect gate="G$1" pin="AGND4" pad="30"/>
+<connect gate="G$1" pin="AGND4" pad="30 AGND4"/>
 <connect gate="G$1" pin="AINM" pad="9"/>
 <connect gate="G$1" pin="AINP" pad="8"/>
 <connect gate="G$1" pin="BDGND" pad="34"/>
