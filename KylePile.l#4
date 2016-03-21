@@ -2319,23 +2319,27 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LT3652">
+<description>&lt;b&gt;LT3632 solar charge controller&lt;/b&gt;
+&lt;br&gt;KRP untested 3.4.16</description>
 <wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
-<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="94"/>
+<wire x1="25.4" y1="17.78" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="VIN" x="-2.54" y="15.24" length="short"/>
 <pin name="VIN_REG" x="-2.54" y="12.7" length="short"/>
 <pin name="SHDN" x="-2.54" y="10.16" length="short"/>
 <pin name="CHRG" x="-2.54" y="7.62" length="short"/>
 <pin name="FAULT" x="-2.54" y="5.08" length="short"/>
 <pin name="TIMER" x="-2.54" y="2.54" length="short"/>
-<pin name="VFB" x="25.4" y="2.54" length="short" rot="R180"/>
-<pin name="NTC" x="25.4" y="5.08" length="short" rot="R180"/>
-<pin name="BAT" x="25.4" y="7.62" length="short" rot="R180"/>
-<pin name="SENSE" x="25.4" y="10.16" length="short" rot="R180"/>
-<pin name="BOOST" x="25.4" y="12.7" length="short" rot="R180"/>
-<pin name="SW" x="25.4" y="15.24" length="short" rot="R180"/>
+<pin name="VFB" x="27.94" y="2.54" length="short" rot="R180"/>
+<pin name="NTC" x="27.94" y="5.08" length="short" rot="R180"/>
+<pin name="BAT" x="27.94" y="7.62" length="short" rot="R180"/>
+<pin name="SENSE" x="27.94" y="10.16" length="short" rot="R180"/>
+<pin name="BOOST" x="27.94" y="12.7" length="short" rot="R180"/>
+<pin name="SW" x="27.94" y="15.24" length="short" rot="R180"/>
 <pin name="GND" x="12.7" y="20.32" length="short" rot="R270"/>
+<text x="0" y="20.32" size="1.27" layer="95">&gt;NAME</text>
+<text x="17.78" y="20.32" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
