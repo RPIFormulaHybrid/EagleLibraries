@@ -2319,6 +2319,8 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LT3652">
+<description>&lt;b&gt;LT3632 solar charge controller&lt;/b&gt;
+&lt;br&gt;KRP untested 3.4.16</description>
 <wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
 <wire x1="0" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="94"/>
 <wire x1="25.4" y1="17.78" x2="25.4" y2="0" width="0.254" layer="94"/>

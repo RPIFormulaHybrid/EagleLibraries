@@ -3538,7 +3538,7 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT3652">
+<deviceset name="LT3652" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LT3652" x="-12.7" y="-7.62"/>
 </gates>
