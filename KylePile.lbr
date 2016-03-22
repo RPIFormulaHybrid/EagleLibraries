@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1402,6 +1402,19 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <text x="-3.81" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.175" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="PDS1-S5-S5-M-TR">
+<smd name="P$1" x="-7.62" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$2" x="-5.08" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$3" x="0" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$4" x="0" y="10.16" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$5" x="-7.62" y="10.16" dx="0.9906" dy="2.1082" layer="1"/>
+<wire x1="-10.16" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="8.89" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2.54" y1="8.89" x2="-10.16" y2="8.89" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-10.16" y1="8.89" x2="-10.16" y2="1.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-11.43" y="1.905" size="1.27" layer="21" rot="R90">&gt;name</text>
+<text x="4.445" y="1.905" size="1.27" layer="21" rot="R90">&gt;value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TSSOP-16">
@@ -2426,6 +2439,23 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pin name="CSBI" x="12.7" y="25.4" length="short" rot="R180"/>
 <text x="-5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PDS1-S5-S5-M-TR">
+<description>DC/DC Converter 1W 5V 200MA OUT :http://www.digikey.com/product-detail/en/cui-inc/PDS1-S5-S5-M-TR/102-2688-1-ND/4009565</description>
+<pin name="GND" x="-12.7" y="7.62" length="middle"/>
+<pin name="VIN" x="-12.7" y="5.08" length="middle"/>
+<pin name="V0" x="-12.7" y="0" length="middle"/>
+<pin name="V+" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<text x="-7.62" y="-7.62" size="1.778" layer="94">&gt;value</text>
+<text x="-7.62" y="12.7" size="1.778" layer="94">&gt;name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3702,6 +3732,26 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <connect gate="G$1" pin="VTEMP1" pad="28"/>
 <connect gate="G$1" pin="VTEMP2" pad="29"/>
 <connect gate="G$1" pin="WDTB" pad="34"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PDS1-S5-S5-M-TR">
+<description>DC/DC Converter 1W 5V 200MA OUT :http://www.digikey.com/product-detail/en/cui-inc/PDS1-S5-S5-M-TR/102-2688-1-ND/4009565</description>
+<gates>
+<gate name="G$1" symbol="PDS1-S5-S5-M-TR" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PDS1-S5-S5-M-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="NC" pad="P$5"/>
+<connect gate="G$1" pin="V+" pad="P$4"/>
+<connect gate="G$1" pin="V0" pad="P$3"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

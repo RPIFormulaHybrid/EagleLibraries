@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1402,6 +1402,19 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <text x="-3.81" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.175" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="PDS1-S5-S5-M-TR">
+<smd name="P$1" x="-7.62" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$2" x="-5.08" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$3" x="0" y="0" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$4" x="0" y="10.16" dx="0.9906" dy="2.1082" layer="1"/>
+<smd name="P$5" x="-7.62" y="10.16" dx="0.9906" dy="2.1082" layer="1"/>
+<wire x1="-10.16" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="8.89" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2.54" y1="8.89" x2="-10.16" y2="8.89" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-10.16" y1="8.89" x2="-10.16" y2="1.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-11.43" y="1.905" size="1.27" layer="21" rot="R90">&gt;name</text>
+<text x="4.445" y="1.905" size="1.27" layer="21" rot="R90">&gt;value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TSSOP-16">
@@ -2372,6 +2385,77 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pin name="GND" x="12.7" y="20.32" length="short" rot="R270"/>
 <text x="0" y="20.32" size="1.27" layer="95">&gt;NAME</text>
 <text x="17.78" y="20.32" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="LTC6802-2">
+<description>&lt;b&gt;LTC6802-2 stack monitor chip&lt;/b&gt;
+&lt;br&gt;Unproven 3.21.16 KRP</description>
+<wire x1="-10.16" y1="-30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="10.16" y2="27.94" width="0.254" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="-10.16" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="27.94" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<pin name="V+" x="-12.7" y="25.4" length="short"/>
+<pin name="C12" x="-12.7" y="22.86" length="short"/>
+<pin name="S12" x="-12.7" y="20.32" length="short"/>
+<pin name="C11" x="-12.7" y="17.78" length="short"/>
+<pin name="S11" x="-12.7" y="15.24" length="short"/>
+<pin name="C10" x="-12.7" y="12.7" length="short"/>
+<pin name="S10" x="-12.7" y="10.16" length="short"/>
+<pin name="C9" x="-12.7" y="7.62" length="short"/>
+<pin name="S9" x="-12.7" y="5.08" length="short"/>
+<pin name="C8" x="-12.7" y="2.54" length="short"/>
+<pin name="S8" x="-12.7" y="0" length="short"/>
+<pin name="C7" x="-12.7" y="-2.54" length="short"/>
+<pin name="S7" x="-12.7" y="-5.08" length="short"/>
+<pin name="C6" x="-12.7" y="-7.62" length="short"/>
+<pin name="S6" x="-12.7" y="-10.16" length="short"/>
+<pin name="C5" x="-12.7" y="-12.7" length="short"/>
+<pin name="S5" x="-12.7" y="-15.24" length="short"/>
+<pin name="C4" x="-12.7" y="-17.78" length="short"/>
+<pin name="S4" x="-12.7" y="-20.32" length="short"/>
+<pin name="C3" x="-12.7" y="-22.86" length="short"/>
+<pin name="S3" x="-12.7" y="-25.4" length="short"/>
+<pin name="C2" x="-12.7" y="-27.94" length="short"/>
+<pin name="S2" x="12.7" y="-27.94" length="short" rot="R180"/>
+<pin name="C1" x="12.7" y="-25.4" length="short" rot="R180"/>
+<pin name="S1" x="12.7" y="-22.86" length="short" rot="R180"/>
+<pin name="V-" x="12.7" y="-20.32" length="short" rot="R180"/>
+<pin name="NC" x="12.7" y="-17.78" length="short" rot="R180"/>
+<pin name="VTEMP1" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="VTEMP2" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="VREF" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="VREG" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="TOS" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="MMB" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="WDTB" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="GPIO1" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="GPIO2" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="A0" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="A1" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="15.24" length="short" rot="R180"/>
+<pin name="SCKI" x="12.7" y="17.78" length="short" rot="R180"/>
+<pin name="SDI" x="12.7" y="20.32" length="short" rot="R180"/>
+<pin name="SDO" x="12.7" y="22.86" length="short" rot="R180"/>
+<pin name="CSBI" x="12.7" y="25.4" length="short" rot="R180"/>
+<text x="-5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PDS1-S5-S5-M-TR">
+<description>DC/DC Converter 1W 5V 200MA OUT :http://www.digikey.com/product-detail/en/cui-inc/PDS1-S5-S5-M-TR/102-2688-1-ND/4009565</description>
+<pin name="GND" x="-12.7" y="7.62" length="middle"/>
+<pin name="VIN" x="-12.7" y="5.08" length="middle"/>
+<pin name="V0" x="-12.7" y="0" length="middle"/>
+<pin name="V+" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<text x="-7.62" y="-7.62" size="1.778" layer="94">&gt;value</text>
+<text x="-7.62" y="12.7" size="1.778" layer="94">&gt;name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3591,6 +3675,76 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VIN_REG" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6802-2">
+<gates>
+<gate name="G$1" symbol="LTC6802-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="44-SSOP">
+<connects>
+<connect gate="G$1" pin="A0" pad="37"/>
+<connect gate="G$1" pin="A1" pad="38"/>
+<connect gate="G$1" pin="A2" pad="39"/>
+<connect gate="G$1" pin="A3" pad="40"/>
+<connect gate="G$1" pin="C1" pad="24"/>
+<connect gate="G$1" pin="C10" pad="6"/>
+<connect gate="G$1" pin="C11" pad="4"/>
+<connect gate="G$1" pin="C12" pad="2"/>
+<connect gate="G$1" pin="C2" pad="22"/>
+<connect gate="G$1" pin="C3" pad="20"/>
+<connect gate="G$1" pin="C4" pad="18"/>
+<connect gate="G$1" pin="C5" pad="16"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="12"/>
+<connect gate="G$1" pin="C8" pad="10"/>
+<connect gate="G$1" pin="C9" pad="8"/>
+<connect gate="G$1" pin="CSBI" pad="44"/>
+<connect gate="G$1" pin="GPIO1" pad="35"/>
+<connect gate="G$1" pin="GPIO2" pad="36"/>
+<connect gate="G$1" pin="MMB" pad="33"/>
+<connect gate="G$1" pin="NC" pad="27"/>
+<connect gate="G$1" pin="S1" pad="25"/>
+<connect gate="G$1" pin="S10" pad="7"/>
+<connect gate="G$1" pin="S11" pad="5"/>
+<connect gate="G$1" pin="S12" pad="3"/>
+<connect gate="G$1" pin="S2" pad="23"/>
+<connect gate="G$1" pin="S3" pad="21"/>
+<connect gate="G$1" pin="S4" pad="19"/>
+<connect gate="G$1" pin="S5" pad="17"/>
+<connect gate="G$1" pin="S6" pad="15"/>
+<connect gate="G$1" pin="S7" pad="13"/>
+<connect gate="G$1" pin="S8" pad="11"/>
+<connect gate="G$1" pin="S9" pad="9"/>
+<connect gate="G$1" pin="SCKI" pad="41"/>
+<connect gate="G$1" pin="SDI" pad="42"/>
+<connect gate="G$1" pin="SDO" pad="43"/>
+<connect gate="G$1" pin="TOS" pad="32"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="26"/>
+<connect gate="G$1" pin="VREF" pad="30"/>
+<connect gate="G$1" pin="VREG" pad="31"/>
+<connect gate="G$1" pin="VTEMP1" pad="28"/>
+<connect gate="G$1" pin="VTEMP2" pad="29"/>
+<connect gate="G$1" pin="WDTB" pad="34"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PDS1-S5-S5-M-TR">
+<description>DC/DC Converter 1W 5V 200MA OUT :http://www.digikey.com/product-detail/en/cui-inc/PDS1-S5-S5-M-TR/102-2688-1-ND/4009565</description>
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
