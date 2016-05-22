@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1369,6 +1369,38 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="4.826" y="6.604" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
 <smd name="PAD_GND" x="1.5875" y="2.06375" dx="2.8448" dy="1.651" layer="1"/>
 <circle x="-1.11125" y="1.11125" radius="0.22450625" width="0.127" layer="21"/>
+</package>
+<package name="SSOP20">
+<description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;
+20-Pin (210-MIL) SSOP&lt;br&gt;
+Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
+<wire x1="-3.419" y1="-2.415" x2="3.42" y2="-2.415" width="0.1524" layer="21"/>
+<wire x1="3.42" y1="2.415" x2="3.42" y2="-2.415" width="0.1524" layer="21"/>
+<wire x1="3.42" y1="2.415" x2="-3.419" y2="2.415" width="0.1524" layer="21"/>
+<wire x1="-3.419" y1="-2.415" x2="-3.419" y2="2.415" width="0.1524" layer="21"/>
+<circle x="-2.349" y="-1.397" radius="0.635" width="0.1524" layer="21"/>
+<smd name="1" x="-2.925" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="2" x="-2.275" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="3" x="-1.625" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="4" x="-0.975" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="5" x="-0.325" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="6" x="0.325" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="7" x="0.975" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="8" x="1.625" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="9" x="2.275" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="10" x="2.925" y="-3.639584375" dx="0.38" dy="1.654" layer="1"/>
+<smd name="11" x="2.925" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="12" x="2.275" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="13" x="1.625" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="14" x="0.975" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="15" x="0.325" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="16" x="-0.325" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="17" x="-0.975" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="18" x="-1.625" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="19" x="-2.275" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<smd name="20" x="-2.925" y="3.611665625" dx="0.38" dy="1.654" layer="1" rot="R180"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.175" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3274,7 +3306,7 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <gate name="G$1" symbol="ADUM3154" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="TSSOP20">
+<device name="" package="SSOP20">
 <connects>
 <connect gate="G$1" pin="!MSS" pad="6"/>
 <connect gate="G$1" pin="GND1" pad="2"/>
@@ -3538,7 +3570,7 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT3652">
+<deviceset name="LT3652" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LT3652" x="-12.7" y="-7.62"/>
 </gates>

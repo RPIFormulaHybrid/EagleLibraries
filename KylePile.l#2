@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1412,6 +1412,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="8.89" width="0.127" layer="21" style="shortdash"/>
 <wire x1="2.54" y1="8.89" x2="-10.16" y2="8.89" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-10.16" y1="8.89" x2="-10.16" y2="1.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-11.43" y="1.905" size="1.27" layer="21" rot="R90">&gt;name</text>
+<text x="4.445" y="1.905" size="1.27" layer="21" rot="R90">&gt;value</text>
 </package>
 </packages>
 <symbols>
@@ -2454,6 +2456,39 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94" style="shortdash"/>
 <text x="-7.62" y="-7.62" size="1.778" layer="94">&gt;value</text>
 <text x="-7.62" y="12.7" size="1.778" layer="94">&gt;name</text>
+</symbol>
+<symbol name="B16920">
+<description>&lt;b&gt; TI bq76920 cell monitor &lt;/b&gt;
+&lt;br&gt; http://www.digikey.com/product-detail/en/texas-instruments/BQ7692000PWR/296-39958-1-ND/5177835
+
+&lt;br&gt;&lt;br&gt; KRP untested 5/22/16</description>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="17.78" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="DSG" x="-2.54" y="25.4" length="short"/>
+<pin name="CHG" x="-2.54" y="22.86" length="short"/>
+<pin name="VSS" x="-2.54" y="20.32" length="short"/>
+<pin name="SDA" x="-2.54" y="17.78" length="short"/>
+<pin name="SCL" x="-2.54" y="15.24" length="short"/>
+<pin name="TS1" x="-2.54" y="12.7" length="short"/>
+<pin name="CAP1" x="-2.54" y="10.16" length="short"/>
+<pin name="REGOUT" x="-2.54" y="7.62" length="short"/>
+<pin name="REGSRC" x="-2.54" y="5.08" length="short"/>
+<pin name="BAT" x="-2.54" y="2.54" length="short"/>
+<pin name="NC" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="VC5" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="VC4" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="VC3" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="VC2" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="VC1" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="VC0" x="20.32" y="17.78" length="short" rot="R180"/>
+<pin name="SRP" x="20.32" y="20.32" length="short" rot="R180"/>
+<pin name="SRN" x="20.32" y="22.86" length="short" rot="R180"/>
+<pin name="ALERT" x="20.32" y="25.4" length="short" rot="R180"/>
+<text x="5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3740,9 +3775,17 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <deviceset name="PDS1-S5-S5-M-TR">
 <description>DC/DC Converter 1W 5V 200MA OUT :http://www.digikey.com/product-detail/en/cui-inc/PDS1-S5-S5-M-TR/102-2688-1-ND/4009565</description>
 <gates>
+<gate name="G$1" symbol="PDS1-S5-S5-M-TR" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="PDS1-S5-S5-M-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="NC" pad="P$5"/>
+<connect gate="G$1" pin="V+" pad="P$4"/>
+<connect gate="G$1" pin="V0" pad="P$3"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
