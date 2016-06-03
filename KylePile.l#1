@@ -1415,6 +1415,45 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <text x="-11.43" y="1.905" size="1.27" layer="21" rot="R90">&gt;name</text>
 <text x="4.445" y="1.905" size="1.27" layer="21" rot="R90">&gt;value</text>
 </package>
+<package name="8_VFSOP">
+<description>&lt;b&gt;8-VFSOP&lt;/b&gt;
+&lt;br&gt;KRP untested 5.28.16</description>
+<smd name="P$1" x="0" y="0" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$2" x="0.5" y="0" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$3" x="1" y="0" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$4" x="1.5" y="0" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$5" x="1.5" y="3.1" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$6" x="1" y="3.1" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$7" x="0.5" y="3.1" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$8" x="0.1" y="3.1" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<wire x1="-0.25" y1="0.35" x2="1.85" y2="0.35" width="0.127" layer="51"/>
+<wire x1="1.85" y1="0.35" x2="1.85" y2="2.75" width="0.127" layer="51"/>
+<wire x1="1.85" y1="2.75" x2="-0.25" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-0.25" y1="2.75" x2="-0.25" y2="0.35" width="0.127" layer="51"/>
+<text x="3.175" y="0.9525" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
+<text x="-0.9525" y="0.635" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
+<text x="0" y="0.635" size="0.6096" layer="21">o</text>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="3.81" x2="2.2225" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="3.81" x2="2.2225" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="-0.635" x2="-0.635" y2="-0.635" width="0.127" layer="21"/>
+<circle x="0.15875" y="0.79375" radius="0.127" width="0.254" layer="21"/>
+</package>
+<package name="S6B-XH">
+<description>&lt;b&gt;JST XL 6 position &lt;/b&gt;
+&lt;br&gt;KRP untested 5.28.16
+&lt;br&gt; http://www.digikey.com/product-detail/en/jst-sales-america-inc/S6B-XH-SM4-TB(LF)(SN)/455-2264-1-ND/1651062</description>
+<smd name="6" x="0" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="5" x="2.5" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="4" x="5" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="3" x="7.5" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="2" x="10" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="1" x="12.5" y="0" dx="4.5" dy="1.3" layer="1" rot="R90"/>
+<smd name="P$7" x="-2.2" y="-6.9" dx="3.9" dy="1.8" layer="1" rot="R90"/>
+<smd name="P$8" x="14.8" y="-6.8" dx="3.9" dy="1.8" layer="1" rot="R90"/>
+<text x="-2.3" y="4.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="6.9" y="4.6" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TSSOP-16">
@@ -2489,6 +2528,38 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <text x="5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TCA9406">
+<description>&lt;b&gt;TI TCA9406 I2C level shifter&lt;/b&gt;
+&lt;br&gt;KRP untested 5.28.16</description>
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SDA_B" x="-2.54" y="10.16" length="short"/>
+<pin name="GND" x="-2.54" y="7.62" length="short" direction="in"/>
+<pin name="VCCA" x="-2.54" y="5.08" length="short" direction="in"/>
+<pin name="SDA_A" x="-2.54" y="2.54" length="short" direction="in"/>
+<pin name="SCL_A" x="22.86" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="OE" x="22.86" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="VCCB" x="22.86" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="SCL_B" x="22.86" y="10.16" length="short" direction="in" rot="R180"/>
+<text x="5.08" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="S6B-XH">
+<description>&lt;b&gt; JST 6 position XH
+&lt;br&gt; KRP untested 5.28.16</description>
+<pin name="6" x="-5.08" y="2.54" length="middle"/>
+<pin name="5" x="-5.08" y="5.08" length="middle"/>
+<pin name="4" x="-5.08" y="7.62" length="middle"/>
+<pin name="3" x="-5.08" y="10.16" length="middle"/>
+<pin name="2" x="-5.08" y="12.7" length="middle"/>
+<pin name="1" x="-5.08" y="15.24" length="middle"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3804,6 +3875,10 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 </devices>
 </deviceset>
 <deviceset name="BQ76920" prefix="U" uservalue="yes">
+<description>&lt;b&gt;TI bq76920 cell monitor chip&lt;/b&gt;
+&lt;br&gt;http://www.digikey.com/product-detail/en/texas-instruments/BQ7692000PWR/296-39958-1-ND/5177835
+
+&lt;br&gt;&lt;br&gt;KRP untested 5/22/16</description>
 <gates>
 <gate name="G$1" symbol="BQ76920" x="0" y="0"/>
 </gates>
@@ -3830,6 +3905,50 @@ http://www.digikey.com/product-detail/en/107SML035M/1572-1046-1-ND/5343976</desc
 <connect gate="G$1" pin="VC4" pad="13"/>
 <connect gate="G$1" pin="VC5" pad="12"/>
 <connect gate="G$1" pin="VSS" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCA9406" prefix="U" uservalue="yes">
+<description>&lt;b&gt; TI TCA9406 I2C level shifter &lt;/b&gt;
+&lt;br&gt; KRP untested 5.28.16</description>
+<gates>
+<gate name="G$1" symbol="TCA9406" x="-10.414" y="-6.604"/>
+</gates>
+<devices>
+<device name="" package="8_VFSOP">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OE" pad="P$6"/>
+<connect gate="G$1" pin="SCL_A" pad="P$5"/>
+<connect gate="G$1" pin="SCL_B" pad="P$8"/>
+<connect gate="G$1" pin="SDA_A" pad="P$4"/>
+<connect gate="G$1" pin="SDA_B" pad="P$1"/>
+<connect gate="G$1" pin="VCCA" pad="P$3"/>
+<connect gate="G$1" pin="VCCB" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S6B-XH" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="S6B-XH" x="-5.08" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="S6B-XH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
